@@ -20,7 +20,7 @@ export function AccordionFaq() {
           <AccordionItem>
             <h2>
               <AccordionButton
-                _expanded={{ bg: "blackAlpha.900", color: "white" }}
+                _expanded={{ bg: "beige", color: "blackAlpha.900" }}
               >
                 <Box flex="1" textAlign="left" fontSize={"x-large"}>
                   O que é uma Landing Page?

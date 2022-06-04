@@ -15,7 +15,6 @@ const IndexPage = () => {
         <PageFirst />
         <PageTech />
         <PagePlane />
-        <PageCoutdown />
         <AccordionItens />
         <ContactForm />
       </BoxGadient>

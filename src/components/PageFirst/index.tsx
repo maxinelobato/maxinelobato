@@ -24,7 +24,7 @@ export const PageFirst = () => {
           <Stack spacing={6} w={"full"} maxW={"lg"}>
             <Box maxW="38rem">
               <Heading
-                bgGradient="linear(to-l, orange.300, purple.300)"
+                bgGradient="linear(to-l, orange.300, beige)"
                 bgClip="text"
                 mb={4}
                 fontFamily="Krona One"
@@ -35,11 +35,11 @@ export const PageFirst = () => {
               </Heading>
               <Text
                 py={3}
-                color={"orange.200"}
-                fontFamily={"Krona One"}
+                color="beige"
+                fontFamily="Krona One"
                 as="h4"
                 size="md"
-                fontSize="xl"
+                fontSize="sm"
               >
                 Pesquisas indicam que um delay de dois segundos durante uma
                 transação online pode resultar em uma taxa de abandono de até

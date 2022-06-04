@@ -76,7 +76,7 @@ export function ContactForm() {
         </Box>
       </Stack>
       <Stack
-        boxShadow={"lg"}
+        boxShadow="dark-lg"
         rounded={"lg"}
         p={{ base: 2, sm: 6, md: 12 }}
         spacing={{ base: 14 }}
