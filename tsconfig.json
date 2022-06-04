@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/components/ScrollTopArrow/ScrollTop.js", "src/components/ContactForm/FormContact.js", "src/components/StaticMenu.js", "src/components/PageCoutdown/CountdownAnimation.tsx", "src/components/ContactForm/Form.tsx", "src/components/ContactForm/HookForm.js", "src/pages/404.js", "src/pages/_document.tsx", "src/components/Pixel/index.js", "lib/layout.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
