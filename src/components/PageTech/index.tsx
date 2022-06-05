@@ -42,7 +42,8 @@ export const PageTech = () => {
             transition="0.1s linear"
             px={{ base: 4, md: 8 }}
             py={"5"}
-            shadow={"lg"}
+            border="1px"
+            borderColor="green.200"
             bgGradient="linear(to-l, blackAlpha.600, transparent)"
             rounded={"lg"}
           >
@@ -88,7 +89,8 @@ export const PageTech = () => {
             transition="0.1s linear"
             px={{ base: 4, md: 8 }}
             py={"5"}
-            shadow={"lg"}
+            border="1px"
+            borderColor="blue.300"
             bgGradient="linear(to-l, blackAlpha.600, transparent)"
             rounded={"lg"}
           >
@@ -134,7 +136,8 @@ export const PageTech = () => {
             transition="0.1s linear"
             px={{ base: 4, md: 8 }}
             py={"5"}
-            shadow={"lg"}
+            border="1px"
+            borderColor="beige"
             bgGradient="linear(to-l, blackAlpha.600, transparent)"
             rounded={"lg"}
           >
@@ -202,7 +205,8 @@ export const PageTech = () => {
               transition="0.1s linear"
               px={{ base: 4, md: 8 }}
               py={"5"}
-              shadow={"lg"}
+              border="1px"
+              borderColor="beige"
               rounded={"lg"}
             >
               <Box mb={2} display={{ md: "flex" }}>
@@ -240,7 +244,8 @@ export const PageTech = () => {
               transition="0.1s linear"
               px={{ base: 4, md: 8 }}
               py={"5"}
-              shadow={"lg"}
+              border="1px"
+              borderColor="beige"
               rounded={"lg"}
             >
               <Box mb={2} display={{ md: "flex" }}>
@@ -278,8 +283,9 @@ export const PageTech = () => {
               transition="0.1s linear"
               px={{ base: 4, md: 8 }}
               py={"5"}
-              shadow={"lg"}
               rounded={"lg"}
+              border="1px"
+              borderColor="beige"
             >
               <Box mb={2} display={{ md: "flex" }}>
                 <Box flexShrink={0}>

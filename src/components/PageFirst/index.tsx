@@ -8,9 +8,12 @@ import {
   Center,
   Box,
   Link,
+  Tag,
+  TagLabel,
 } from "@chakra-ui/react";
 import { CgArrowRightR } from "@react-icons/all-files/cg/CgArrowRightR";
 import { motion } from "framer-motion";
+import Typed from "react-typed";
 
 export const PageFirst = () => {
   return (
@@ -31,7 +34,13 @@ export const PageFirst = () => {
                 as="h2"
                 size="xl"
               >
-                Sua Landing Page demora mais de 3 segundos para carregar?
+                <Typed
+                  strings={[
+                    "Sua Landing Page demora mais de 3 segundos para carregar?",
+                  ]}
+                  typeSpeed={40}
+                  loop
+                />
               </Heading>
               <Text
                 py={3}
@@ -41,9 +50,24 @@ export const PageFirst = () => {
                 size="md"
                 fontSize="sm"
               >
-                Pesquisas indicam que um delay de dois segundos durante uma
-                transação online pode resultar em uma taxa de abandono de até
-                87%.
+                Você sabia que as pesquisas indicam que um delay de
+                <Tag
+                  size="sm"
+                  fontSize="sm"
+                  variant="subtle"
+                  colorScheme="orange"
+                >
+                  <TagLabel>2 SEGUNDOS</TagLabel>
+                </Tag>
+                pode resultar em um abandono de até{" "}
+                <Tag
+                  size="sm"
+                  fontSize="sm"
+                  variant="subtle"
+                  colorScheme="orange"
+                >
+                  <TagLabel>87% nas visitas?</TagLabel>
+                </Tag>
               </Text>
             </Box>
             <Stack
