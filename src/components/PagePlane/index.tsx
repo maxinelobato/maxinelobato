@@ -17,6 +17,8 @@ import { ReactNode } from "react";
 import { FaCheckCircle } from "@react-icons/all-files/fa/FaCheckCircle";
 import { ModalPremium } from "../ModalPremium";
 import { motion } from "framer-motion";
+import React from "react";
+import Bounce from "react-reveal/Bounce";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -44,21 +46,25 @@ export function PagePlane() {
     >
       <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
         {/** H1_1 */}
-        <chakra.h1
-          textAlign={"center"}
-          fontSize={"4xl"}
-          py={10}
-          fontWeight={"bold"}
-          textTransform={"uppercase"}
-          fontFamily={"Krona One"}
-        >
-          os melhores planos do mercado
-        </chakra.h1>
+        <Bounce left duration={500}>
+          <chakra.h1
+            textAlign={"center"}
+            fontSize={"4xl"}
+            py={10}
+            fontWeight={"bold"}
+            textTransform={"uppercase"}
+            fontFamily={"Krona One"}
+          >
+            os melhores planos do mercado
+          </chakra.h1>
+        </Bounce>
         <VStack textAlign="center">
-          <Text fontSize="lg" color={"whiteAlpha.500"}>
-            Adquira um dos planos e tenha a sua página em até 5 dias. Parcele no
-            cartão em até 4x SEM JUROS. Cancele quando quiser.
-          </Text>
+          <Bounce left duration={600}>
+            <Text fontSize="lg" color={"whiteAlpha.500"}>
+              Adquira um dos planos e tenha a sua página em até 5 dias. Parcele
+              no cartão em até 4x SEM JUROS. Cancele quando quiser.
+            </Text>
+          </Bounce>
         </VStack>
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -68,98 +74,26 @@ export function PagePlane() {
           py={16}
         >
           {/** Plano 1 */}
-          <PriceWrapper>
-            <Box py={4} px={12}>
-              <HStack justifyContent={"center"}>
-                <Tag
-                  fontSize="sm"
-                  colorScheme="green"
-                  textTransform={"uppercase"}
-                  variant={"solid"}
-                  size={"lg"}
-                >
-                  1 LP
-                </Tag>
-              </HStack>
-              <HStack justifyContent="center">
-                <Tag fontSize="sm" colorScheme="green">
-                  Plano
-                </Tag>
-                <Text fontSize="5xl" fontWeight="900" color="green.300">
-                  Lite
-                </Text>
-              </HStack>
-            </Box>
-            <VStack
-              bgGradient="linear(to-l, transparent, blackAlpha.600)"
-              py={4}
-              borderBottomRadius={"xl"}
-            >
-              <List spacing={3} textAlign="start" px={12}>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  Logo Superior.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  Sequência de Copys H1 e H2.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  CTA (simples, eficaz, frasal e quantitativo)
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  Imagem/Vídeo/Animação projetada sem invadir o texto.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  Somente 1 Landing Page.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="green.500" />
-                  Manutenção mensal.
-                </ListItem>
-              </List>
-              <Box w="80%" pt={7}>
-                <Link
-                  style={{ textDecoration: "none" }}
-                  href="https://wa.me/message/N7ODJHBPZALLJ1"
-                  isExternal
-                >
-                  <Button
-                    textTransform={"uppercase"}
-                    w="full"
-                    colorScheme="green"
-                    variant="outline"
-                  >
-                    saiba mais
-                  </Button>
-                </Link>
-              </Box>
-            </VStack>
-          </PriceWrapper>
-          {/** Plano 2 */}
-          <PriceWrapper>
-            <Box>
+          <Bounce top duration={700}>
+            <PriceWrapper>
               <Box py={4} px={12}>
                 <HStack justifyContent={"center"}>
                   <Tag
                     fontSize="sm"
-                    colorScheme="orange"
+                    colorScheme="green"
                     textTransform={"uppercase"}
                     variant={"solid"}
                     size={"lg"}
                   >
-                    5 LPs
+                    1 LP
                   </Tag>
                 </HStack>
                 <HStack justifyContent="center">
-                  <Tag fontSize="sm" colorScheme="orange">
+                  <Tag fontSize="sm" colorScheme="green">
                     Plano
                   </Tag>
-                  <Text fontSize="5xl" fontWeight="900" color="orange.300">
-                    Plus
+                  <Text fontSize="5xl" fontWeight="900" color="green.300">
+                    Lite
                   </Text>
                 </HStack>
               </Box>
@@ -170,27 +104,27 @@ export function PagePlane() {
               >
                 <List spacing={3} textAlign="start" px={12}>
                   <ListItem>
-                    <ListIcon as={FaCheckCircle} color="orange.500" />
+                    <ListIcon as={FaCheckCircle} color="green.500" />
                     Logo Superior.
                   </ListItem>
                   <ListItem>
-                    <ListIcon as={FaCheckCircle} color="orange.500" />
+                    <ListIcon as={FaCheckCircle} color="green.500" />
                     Sequência de Copys H1 e H2.
                   </ListItem>
                   <ListItem>
-                    <ListIcon as={FaCheckCircle} color="orange.500" />
+                    <ListIcon as={FaCheckCircle} color="green.500" />
                     CTA (simples, eficaz, frasal e quantitativo)
                   </ListItem>
                   <ListItem>
-                    <ListIcon as={FaCheckCircle} color="orange.500" />
+                    <ListIcon as={FaCheckCircle} color="green.500" />
                     Imagem/Vídeo/Animação projetada sem invadir o texto.
                   </ListItem>
                   <ListItem>
-                    <ListIcon as={FaCheckCircle} color="orange.500" />
-                    Até 5 Landing Pages.
+                    <ListIcon as={FaCheckCircle} color="green.500" />
+                    Somente 1 Landing Page.
                   </ListItem>
                   <ListItem>
-                    <ListIcon as={FaCheckCircle} color="orange.500" />
+                    <ListIcon as={FaCheckCircle} color="green.500" />
                     Manutenção mensal.
                   </ListItem>
                 </List>
@@ -203,74 +137,152 @@ export function PagePlane() {
                     <Button
                       textTransform={"uppercase"}
                       w="full"
-                      colorScheme="orange"
+                      colorScheme="green"
+                      variant="outline"
                     >
                       saiba mais
                     </Button>
                   </Link>
                 </Box>
               </VStack>
-            </Box>
-          </PriceWrapper>
-          {/** Plano 3 */}
-          <PriceWrapper>
-            <Box py={4} px={12}>
-              <HStack justifyContent={"center"}>
-                <Tag
-                  fontSize="sm"
-                  colorScheme="blue"
-                  textTransform={"uppercase"}
-                  variant={"solid"}
-                  size={"lg"}
+            </PriceWrapper>
+          </Bounce>
+          {/** Plano 2 */}
+          <Bounce top duration={800}>
+            <PriceWrapper>
+              <Box>
+                <Box py={4} px={12}>
+                  <HStack justifyContent={"center"}>
+                    <Tag
+                      fontSize="sm"
+                      colorScheme="orange"
+                      textTransform={"uppercase"}
+                      variant={"solid"}
+                      size={"lg"}
+                    >
+                      5 LPs
+                    </Tag>
+                  </HStack>
+                  <HStack justifyContent="center">
+                    <Tag fontSize="sm" colorScheme="orange">
+                      Plano
+                    </Tag>
+                    <Text fontSize="5xl" fontWeight="900" color="orange.300">
+                      Plus
+                    </Text>
+                  </HStack>
+                </Box>
+                <VStack
+                  bgGradient="linear(to-l, transparent, blackAlpha.600)"
+                  py={4}
+                  borderBottomRadius={"xl"}
                 >
-                  Ilimitado
-                </Tag>
-              </HStack>
-              <HStack justifyContent="center">
-                <Tag fontSize="sm" colorScheme="blue">
-                  Plano
-                </Tag>
-                <Text fontSize="5xl" fontWeight="900" color="blue.300">
-                  Premium
-                </Text>
-              </HStack>
-            </Box>
-            <VStack
-              bgGradient="linear(to-l, transparent, blackAlpha.600)"
-              py={4}
-              borderBottomRadius={"xl"}
-            >
-              <List spacing={3} textAlign="start" px={12}>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="blue.500" />
-                  Logo Superior.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="blue.500" />
-                  Sequência de Copys H1 e H2.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="blue.500" />
-                  CTA (simples, eficaz, frasal e quantitativo)
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="blue.500" />
-                  Imagem/Vídeo/Animação projetada sem invadir o texto.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="blue.500" />
-                  Landing Pages Ilimitadas.
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={FaCheckCircle} color="blue.500" />
-                  Manutenção mensal.
-                </ListItem>
-              </List>
-              <Box w="80%" pt={7}>
-                <ModalPremium />
+                  <List spacing={3} textAlign="start" px={12}>
+                    <ListItem>
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
+                      Logo Superior.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
+                      Sequência de Copys H1 e H2.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
+                      CTA (simples, eficaz, frasal e quantitativo)
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
+                      Imagem/Vídeo/Animação projetada sem invadir o texto.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
+                      Até 5 Landing Pages.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={FaCheckCircle} color="orange.500" />
+                      Manutenção mensal.
+                    </ListItem>
+                  </List>
+                  <Box w="80%" pt={7}>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      href="https://wa.me/message/N7ODJHBPZALLJ1"
+                      isExternal
+                    >
+                      <Button
+                        textTransform={"uppercase"}
+                        w="full"
+                        colorScheme="orange"
+                      >
+                        saiba mais
+                      </Button>
+                    </Link>
+                  </Box>
+                </VStack>
               </Box>
-            </VStack>
-          </PriceWrapper>
+            </PriceWrapper>
+          </Bounce>
+          {/** Plano 3 */}
+          <Bounce top duration={900}>
+            <PriceWrapper>
+              <Box py={4} px={12}>
+                <HStack justifyContent={"center"}>
+                  <Tag
+                    fontSize="sm"
+                    colorScheme="blue"
+                    textTransform={"uppercase"}
+                    variant={"solid"}
+                    size={"lg"}
+                  >
+                    Ilimitado
+                  </Tag>
+                </HStack>
+                <HStack justifyContent="center">
+                  <Tag fontSize="sm" colorScheme="blue">
+                    Plano
+                  </Tag>
+                  <Text fontSize="5xl" fontWeight="900" color="blue.300">
+                    Premium
+                  </Text>
+                </HStack>
+              </Box>
+              <VStack
+                bgGradient="linear(to-l, transparent, blackAlpha.600)"
+                py={4}
+                borderBottomRadius={"xl"}
+              >
+                <List spacing={3} textAlign="start" px={12}>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Logo Superior.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Sequência de Copys H1 e H2.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    CTA (simples, eficaz, frasal e quantitativo)
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Imagem/Vídeo/Animação projetada sem invadir o texto.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Landing Pages Ilimitadas.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={FaCheckCircle} color="blue.500" />
+                    Manutenção mensal.
+                  </ListItem>
+                </List>
+                <Box w="80%" pt={7}>
+                  <ModalPremium />
+                </Box>
+              </VStack>
+            </PriceWrapper>
+          </Bounce>
         </Stack>
       </Box>
     </Stack>

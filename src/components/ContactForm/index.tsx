@@ -36,7 +36,7 @@ export function ContactForm() {
             >
               &
             </Text>{" "}
-            Sabemos como lhe ajudar.
+            Vou dar o meu melhor para lhe ajudar.
           </Heading>
           <Stack direction={"row"} spacing={4} align={"center"}>
             <AvatarGroup>
@@ -51,7 +51,7 @@ export function ContactForm() {
                   ml={-2}
                   mr={3}
                 />
-                <TagLabel textTransform={"uppercase"}>Nós</TagLabel>
+                <TagLabel textTransform={"uppercase"}>Eu</TagLabel>
               </Tag>
             </AvatarGroup>
             <Text fontFamily={"heading"} fontSize={{ base: "4xl", md: "6xl" }}>
@@ -76,7 +76,9 @@ export function ContactForm() {
         </Box>
       </Stack>
       <Stack
-        boxShadow="dark-lg"
+        border="1px"
+        borderColor="beige"
+        bgGradient="linear(to-l, blackAlpha.600, transparent)"
         rounded={"lg"}
         p={{ base: 2, sm: 6, md: 12 }}
         spacing={{ base: 14 }}

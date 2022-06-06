@@ -1,5 +1,7 @@
 import { Box, chakra, Stack } from "@chakra-ui/react";
 import { AccordionFaq } from "./AccordionFaq";
+import React from "react";
+import Bounce from "react-reveal/Bounce";
 
 export function AccordionItens() {
   return (
@@ -11,16 +13,18 @@ export function AccordionItens() {
     >
       <Box maxW="7xl" mx={"auto"} pt={0} px={{ base: 2, sm: 12, md: 17 }}>
         {/** H1_1 */}
-        <chakra.h1
-          textAlign={"center"}
-          fontSize={"4xl"}
-          py={16}
-          fontWeight={"bold"}
-          textTransform={"uppercase"}
-          fontFamily={"Krona One"}
-        >
-          perguntas e respostas
-        </chakra.h1>
+        <Bounce left>
+          <chakra.h1
+            textAlign={"center"}
+            fontSize={"4xl"}
+            py={16}
+            fontWeight={"bold"}
+            textTransform={"uppercase"}
+            fontFamily={"Krona One"}
+          >
+            perguntas e respostas
+          </chakra.h1>
+        </Bounce>
         <AccordionFaq />
       </Box>
     </Stack>

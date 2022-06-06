@@ -3,7 +3,6 @@ import {
   Flex,
   Button,
   Text,
-  Image,
   Heading,
   Center,
   Box,
@@ -11,7 +10,6 @@ import {
   Tag,
   TagLabel,
 } from "@chakra-ui/react";
-import { CgArrowRightR } from "@react-icons/all-files/cg/CgArrowRightR";
 import { motion } from "framer-motion";
 import Typed from "react-typed";
 
@@ -19,27 +17,31 @@ export const PageFirst = () => {
   return (
     <>
       <Stack
-        textAlign={"left"}
+        textAlign={"center"}
         spacing={{ base: 8, md: 14 }}
         direction={{ base: "column", md: "row" }}
+        py={{ base: 0, md: 10 }}
+        backgroundImage={"url(code.svg)"}
+        backgroundSize={"cover"}
+        backgroundPosition={"center center"}
+        minH={"80vh"}
       >
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
-          <Stack spacing={6} w={"full"} maxW={"lg"}>
-            <Box maxW="38rem">
+          <Stack spacing={10} w="full" maxW="lg">
+            <Box maxW="lg">
               <Heading
                 bgGradient="linear(to-l, orange.300, beige)"
                 bgClip="text"
                 mb={4}
                 fontFamily="Krona One"
+                fontSize="xxx-large"
                 as="h2"
-                size="xl"
               >
                 <Typed
                   strings={[
                     "Sua Landing Page demora mais de 3 segundos para carregar?",
                   ]}
                   typeSpeed={40}
-                  loop
                 />
               </Heading>
               <Text
@@ -72,7 +74,7 @@ export const PageFirst = () => {
             </Box>
             <Stack
               py={3}
-              justify={"left"}
+              justify={"center"}
               direction={{ base: "column", md: "row" }}
             >
               <Link
@@ -93,7 +95,6 @@ export const PageFirst = () => {
                     bg: "orange.500",
                     textColor: "beige",
                   }}
-                  leftIcon={<CgArrowRightR />}
                   whileHover={{ scale: 1.2 }}
                   transition="0.1s linear"
                 >
@@ -104,15 +105,6 @@ export const PageFirst = () => {
               </Link>
             </Stack>
           </Stack>
-        </Flex>
-        <Flex justifyContent="space-evenly" flex={1}>
-          <Image
-            alt={"Layout Responsivo"}
-            loading="lazy"
-            src={"device1.svg"}
-            h={"90%"}
-            w={"90%"}
-          />
         </Flex>
       </Stack>
     </>
