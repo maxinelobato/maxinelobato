@@ -9,7 +9,6 @@ import {
   Link,
   Tag,
   TagLabel,
-  Container,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Typed from "react-typed";
