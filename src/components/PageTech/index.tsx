@@ -27,12 +27,12 @@ export const PageTech = () => {
         {/** H1_1 */}
         <Bounce left duration={500}>
           <chakra.h1
-            textAlign={"center"}
-            fontSize={"4xl"}
+            textAlign="center"
+            fontSize="4xl"
             py={16}
-            fontWeight={"bold"}
-            textTransform={"uppercase"}
-            fontFamily={"Krona One"}
+            fontWeight="bold"
+            textTransform="uppercase"
+            fontFamily="Krona One"
           >
             Sua Experiência é a nossa missão
           </chakra.h1>

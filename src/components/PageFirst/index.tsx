@@ -27,15 +27,14 @@ export const PageFirst = () => {
         minH={"80vh"}
       >
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
-          <Stack w="full" maxW="lg">
-            <Box maxW="lg">
+          <Stack w="full" maxW="4xl">
+            <Box maxW="full">
               <Heading
                 bgGradient="linear(to-l, orange.300, beige)"
                 bgClip="text"
                 mb={4}
                 fontFamily="Krona One"
                 fontSize="xxx-large"
-                as="h2"
               >
                 <Typed
                   strings={[

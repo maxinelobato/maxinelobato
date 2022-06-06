@@ -27,9 +27,9 @@ function PriceWrapper({ children }: { children: ReactNode }) {
       whileHover={{ scale: 1.1 }}
       transition="0.1s linear"
       mb={4}
-      boxShadow={"lg"}
       alignSelf={{ base: "center", lg: "flex-start" }}
       borderRadius={"lg"}
+      boxShadow={"0 2px 15px 0px rgb(255 255 255 / 50%)"}
     >
       {children}
     </Box>

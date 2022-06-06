@@ -1,4 +1,9 @@
-import { ChakraProvider, extendTheme, ThemeConfig } from "@chakra-ui/react";
+import {
+  ChakraProvider,
+  ColorModeScript,
+  extendTheme,
+  ThemeConfig,
+} from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import { FramerMotionViewPort } from "../components/FramerMotionViewPort";
 import { useEffect } from "react";
@@ -76,6 +81,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
 
       <ChakraProvider theme={theme}>
+        <ColorModeScript type="cookie" />
         <FramerMotionViewPort />
         <Component {...pageProps} />
       </ChakraProvider>

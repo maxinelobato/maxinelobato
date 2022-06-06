@@ -15,6 +15,8 @@ import "@fontsource/krona-one";
 import { AiFillHeart } from "react-icons/ai";
 import { IoPeopleCircleSharp } from "react-icons/io5";
 import { About } from "./About";
+import React from "react";
+import Bounce from "react-reveal/Bounce";
 
 export function AboutMe() {
   return (
@@ -27,17 +29,21 @@ export function AboutMe() {
     >
       <Stack spacing={{ base: 10, md: 20 }} py={24}>
         <Box maxW="32rem">
-          <Heading fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}>
-            Sabemos do potencial deste mercado{" "}
-            <Text
-              as={"span"}
-              bgGradient="linear(to-r, red.400,pink.400)"
-              bgClip="text"
+          <Bounce left>
+            <Heading
+              fontSize={{ base: "3xl", sm: "4xl", md: "5xl", lg: "6xl" }}
             >
-              &
-            </Text>{" "}
-            Vou dar o meu melhor para lhe ajudar.
-          </Heading>
+              Sabemos do potencial deste mercado{" "}
+              <Text
+                as={"span"}
+                bgGradient="linear(to-r, red.400,pink.400)"
+                bgClip="text"
+              >
+                &
+              </Text>{" "}
+              Vou dar o meu melhor para lhe ajudar.
+            </Heading>
+          </Bounce>
           <Stack direction={"row"} spacing={4} align={"center"}>
             <AvatarGroup>
               <Tag size="lg" colorScheme="red" borderRadius="full">
