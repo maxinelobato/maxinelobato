@@ -19,6 +19,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
+    router.events.on("routeChangeComplete", pageview);
+    return () => {
+      router.events.off("routeChangeComplete", pageview);
+    };
+  }, [router.events]);
+
+  useEffect(() => {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
     fbq.pageview();
 

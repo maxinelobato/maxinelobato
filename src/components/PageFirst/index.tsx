@@ -9,6 +9,7 @@ import {
   Link,
   Tag,
   TagLabel,
+  Container,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Typed from "react-typed";
@@ -27,7 +28,7 @@ export const PageFirst = () => {
         minH={"80vh"}
       >
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
-          <Stack spacing={10} w="full" maxW="lg">
+          <Stack w="full" maxW="lg">
             <Box maxW="lg">
               <Heading
                 bgGradient="linear(to-l, orange.300, beige)"
