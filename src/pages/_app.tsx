@@ -11,7 +11,7 @@ import Script from "next/script";
 import { useRouter } from "next/router";
 import * as fbq from "../../lib/fpixel";
 import * as gtag from "../../lib/gtag";
-import { GTM_ID, pageview } from "../../lib/gtm";
+// import { GTM_ID, pageview } from "../../lib/gtm";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -24,12 +24,12 @@ const theme = extendTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  useEffect(() => {
-    router.events.on("routeChangeComplete", pageview);
-    return () => {
-      router.events.off("routeChangeComplete", pageview);
-    };
-  }, [router.events]);
+  // useEffect(() => {
+  //   router.events.on("routeChangeComplete", pageview);
+  //   return () => {
+  //     router.events.off("routeChangeComplete", pageview);
+  //   };
+  // }, [router.events]);
 
   useEffect(() => {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
@@ -87,7 +87,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
 
-      {/* Google Tag Manager - Global base code */}
+      {/* Google Tag Manager - Global base code
       <Script
         id="gtag-base"
         strategy="afterInteractive"
@@ -100,7 +100,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             })(window,document,'script','dataLayer', '${GTM_ID}');
           `,
         }}
-      />
+      /> */}
 
       <ChakraProvider theme={theme}>
         <ColorModeScript type="cookie" />
