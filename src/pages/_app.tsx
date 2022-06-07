@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import * as fbq from "../../lib/fpixel";
+import * as gtag from "../../lib/gtag";
 import { GTM_ID, pageview } from "../../lib/gtm";
 
 const config: ThemeConfig = {
@@ -34,8 +35,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     // This pageview only triggers the first time (it's important for Pixel to have real information)
     fbq.pageview();
 
-    const handleRouteChange = () => {
+    const handleRouteChange = (url) => {
       fbq.pageview();
+      gtag.pageview(url);
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
@@ -46,6 +48,26 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+
       {/* Global Site Code Pixel - Facebook Pixel */}
       <Script
         id="fb-pixel"
