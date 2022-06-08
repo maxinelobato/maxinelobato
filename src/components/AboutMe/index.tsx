@@ -27,7 +27,7 @@ export function AboutMe() {
       spacing={{ base: 10, lg: 32 }}
       py={{ base: 10, sm: 20, lg: 20 }}
     >
-      <Stack spacing={{ base: 10, md: 20 }} py={24}>
+      <Stack spacing={{ base: 10, md: 20 }}>
         <Box maxW="32rem">
           <Bounce left>
             <Heading
@@ -82,13 +82,15 @@ export function AboutMe() {
         </Box>
       </Stack>
       <Stack
+        justifyContent="center"
         border="1px"
         borderColor="beige"
-        bgGradient="linear(to-l, blackAlpha.600, whiteAlpha.200)"
+        bgColor="blackAlpha.600"
         rounded={"lg"}
         p={{ base: 2, sm: 6, md: 12 }}
         spacing={{ base: 14 }}
-        maxW={{ lg: "lg" }}
+        maxW="lg"
+        maxH="lg"
       >
         <Stack spacing={4}>
           <About />
