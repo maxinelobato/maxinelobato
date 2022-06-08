@@ -1,5 +1,6 @@
 import {
   Box,
+  Code,
   Container,
   Icon,
   Stack,
@@ -12,7 +13,7 @@ import { LogoTecs } from "../LogoTecs";
 
 export function SecondFooter() {
   return (
-    <Box bg="blackAlpha.600" color={"beige"}>
+    <Box bg="blackAlpha.900" color={"beige"}>
       <Container
         as={Stack}
         maxW={"6xl"}
@@ -31,16 +32,9 @@ export function SecondFooter() {
           <Icon as={GiBrazil} color="whiteAlpha.400" />
           <Text color={"whiteAlpha.400"}>Brasil</Text>
         </Container>
-        <Tag
-          color={"whiteAlpha.400"}
-          size="sm"
-          bgGradient="linear(to-l, blackAlpha.700, blackAlpha.800)"
-          borderRadius="full"
-          fontSize={"smaller"}
-          shadow={"lg"}
-        >
-          <TagLabel>Desenvolvido por Maxine L. Lima</TagLabel>
-        </Tag>
+        <Code color="whiteAlpha.400" bgColor="whiteAlpha.100">
+          Desenvolvido por Maxine L. Lima
+        </Code>
       </Container>
     </Box>
   );

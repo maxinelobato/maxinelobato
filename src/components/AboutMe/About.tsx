@@ -86,9 +86,9 @@ export function About() {
             <Button
               size="lg"
               variant="solid"
-              fontSize={"sm"}
+              fontSize="sm"
               rounded="md"
-              colorScheme="whatsapp"
+              colorScheme="green"
               rightIcon={<BsWhatsapp />}
               textTransform="uppercase"
             >

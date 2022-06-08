@@ -5,8 +5,8 @@ export function LogoTecs() {
   return (
     <Tag
       size="lg"
-      color={"beige"}
-      bgColor={"blackAlpha.900"}
+      color="beige"
+      bgColor="whiteAlpha.100"
       borderRadius="lg"
       shadow={"lg"}
     >
