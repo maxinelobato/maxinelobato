@@ -1,13 +1,4 @@
-import {
-  Box,
-  Code,
-  Container,
-  Icon,
-  Stack,
-  Tag,
-  TagLabel,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Code, Container, Icon, Stack, Text } from "@chakra-ui/react";
 import { GiBrazil } from "@react-icons/all-files/gi/GiBrazil";
 import { LogoTecs } from "../LogoTecs";
 
