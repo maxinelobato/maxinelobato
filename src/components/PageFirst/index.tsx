@@ -29,10 +29,11 @@ export const PageFirst = () => {
         spacing={{ base: 8, md: 14 }}
         direction={{ base: "column", md: "row" }}
         py={{ base: 0, md: 10 }}
-        backgroundImage={"url(code.svg)"}
-        backgroundSize="cover"
-        backgroundPosition={"center center"}
-        minH={"100vh"}
+        bgImage="url(code.svg)"
+        bgSize="cover"
+        bgPosition="center center"
+        bgRepeat="no-repeat"
+        minH="100vh"
       >
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
           <Stack w="full" maxW="4xl">
