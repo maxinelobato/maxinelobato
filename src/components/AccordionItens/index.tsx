@@ -10,15 +10,8 @@ export function AccordionItens() {
       spacing={{ base: 8, md: 14 }}
       direction={{ base: "column", md: "row" }}
       py={{ base: 0, md: 2 }}
-      bgColor="blackAlpha.600"
     >
-      <Box
-        maxW="7xl"
-        mx={"auto"}
-        pt={0}
-        mb={10}
-        px={{ base: 2, sm: 12, md: 17 }}
-      >
+      <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
         {/** H1_1 */}
         <Bounce left>
           <chakra.h1
@@ -29,7 +22,7 @@ export function AccordionItens() {
             textTransform={"uppercase"}
             fontFamily={"Krona One"}
           >
-            perguntas e respostas
+            faq - perguntas e respostas
           </chakra.h1>
         </Bounce>
         <AccordionFaq />

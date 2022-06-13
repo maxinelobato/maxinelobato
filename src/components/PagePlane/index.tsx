@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   chakra,
+  Flex,
   HStack,
   Link,
   List,
@@ -22,17 +23,44 @@ import Bounce from "react-reveal/Bounce";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
-    <Box
+    <Flex
       as={motion.div}
       whileHover={{ scale: 1.1 }}
       transition="0.1s linear"
-      mb={4}
-      alignSelf={{ base: "center", lg: "flex-start" }}
-      borderRadius={"lg"}
-      boxShadow={"0 2px 15px 0px rgb(255 255 255 / 50%)"}
+      boxShadow="lg"
+      direction={{ base: "column-reverse", md: "row" }}
+      rounded={"xl"}
+      justifyContent={"space-between"}
+      position={"relative"}
+      bg="whiteAlpha.200"
+      border="1px solid"
+      borderColor="whiteAlpha.400"
+      _after={{
+        content: '""',
+        position: "absolute",
+        height: "21px",
+        width: "29px",
+        left: "35px",
+        top: "-10px",
+        backgroundSize: "cover",
+      }}
+      _before={{
+        content: '""',
+        position: "absolute",
+        zIndex: "-1",
+        height: "full",
+        maxW: "640px",
+        width: "full",
+        filter: "blur(40px)",
+        transform: "scale(0.98)",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        top: 0,
+        left: 0,
+      }}
     >
-      {children}
-    </Box>
+      <Box alignSelf={{ base: "center", lg: "flex-start" }}>{children}</Box>
+    </Flex>
   );
 }
 
@@ -42,7 +70,7 @@ export function PagePlane() {
       textAlign={"left"}
       spacing={{ base: 8, md: 14 }}
       direction={{ base: "column", md: "row" }}
-      py={{ base: 0, md: 10 }}
+      py={{ base: 0, md: 2 }}
     >
       <Box maxW="7xl" mx={"auto"} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
         {/** H1_1 */}
@@ -58,7 +86,7 @@ export function PagePlane() {
             os melhores planos do mercado
           </chakra.h1>
         </Bounce>
-        <VStack textAlign="center">
+        <VStack textAlign="center" mt={-6} py={6}>
           <Bounce left duration={600}>
             <Text fontSize="lg" color={"whiteAlpha.500"}>
               Adquira um dos planos e tenha a sua página em até 5 dias. Parcele
@@ -71,7 +99,7 @@ export function PagePlane() {
           textAlign="center"
           justify="center"
           spacing={{ base: 4, lg: 10 }}
-          py={16}
+          py={10}
         >
           {/** Plano 1 */}
           <Bounce top duration={700}>

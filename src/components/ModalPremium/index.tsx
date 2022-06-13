@@ -24,7 +24,7 @@ import { HiGift } from "react-icons/hi";
 
 export function ModalPremium() {
   const OverlayOne = () => (
-    <ModalOverlay bg="blackAlpha.300" backdropFilter="saturate(5%)" />
+    <ModalOverlay bg="blackAlpha.300" backdropFilter="blur(20px)" />
   );
 
   const { isOpen, onOpen, onClose } = useDisclosure();

@@ -10,6 +10,7 @@ import {
   TagLabel,
   Container,
   SimpleGrid,
+  Flex,
 } from "@chakra-ui/react";
 import "@fontsource/krona-one";
 import { AiFillHeart } from "react-icons/ai";
@@ -21,11 +22,12 @@ import Bounce from "react-reveal/Bounce";
 export function AboutMe() {
   return (
     <Container
+      minH="100vh"
       as={SimpleGrid}
       maxW={"7xl"}
       columns={{ base: 1, md: 2 }}
       spacing={{ base: 10, lg: 32 }}
-      py={{ base: 10, sm: 20, lg: 20 }}
+      py={{ base: 10, sm: 20, lg: 32 }}
     >
       <Stack spacing={{ base: 10, md: 20 }}>
         <Box maxW="32rem">
@@ -81,21 +83,40 @@ export function AboutMe() {
           </Stack>
         </Box>
       </Stack>
-      <Stack
-        justifyContent="center"
-        border="1px"
-        borderColor="beige"
-        bgColor="blackAlpha.600"
-        rounded={"lg"}
-        p={{ base: 2, sm: 6, md: 12 }}
-        spacing={{ base: 14 }}
-        maxW="lg"
-        maxH="lg"
+      <Flex
+        boxShadow="lg"
+        direction="column"
+        rounded="xl"
+        justifyContent={"center"}
+        bg="whiteAlpha.200"
+        border="1px solid"
+        borderColor="whiteAlpha.400"
+        _after={{
+          content: '""',
+          position: "absolute",
+          height: "21px",
+          width: "29px",
+          left: "35px",
+          top: "-10px",
+          backgroundSize: "cover",
+        }}
+        _before={{
+          content: '""',
+          position: "absolute",
+          zIndex: "-1",
+          height: "full",
+          maxW: "640px",
+          width: "full",
+          filter: "blur(40px)",
+          transform: "scale(0.98)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          top: 0,
+          left: 0,
+        }}
       >
-        <Stack spacing={4}>
-          <About />
-        </Stack>
-      </Stack>
+        <About />
+      </Flex>
     </Container>
   );
 }

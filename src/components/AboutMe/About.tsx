@@ -62,25 +62,6 @@ export function About() {
         >
           Gestora de Tráfego
         </Text>
-        <Stack direction={"row"} justify={"center"} spacing={6} mt={10}>
-          <Link href={"https://www.instagram.com/maxinelobato"} isExternal>
-            <Icon as={BsInstagram} w={10} h={10} color={"beige"} />
-          </Link>
-          <Link
-            href={
-              "https://open.spotify.com/user/12147654153?si=4f79f1686ffb4cb2"
-            }
-            isExternal
-          >
-            <Icon as={BsSpotify} w={10} h={10} color={"beige"} />
-          </Link>
-          <Link
-            href={"https://www.linkedin.com/in/maxine-lobato-a9613189/"}
-            isExternal
-          >
-            <Icon as={BsLinkedin} w={10} h={10} color={"beige"} />
-          </Link>
-        </Stack>
         <Stack mt={10} direction={"column"} alignItems="center">
           <HStack>
             <Button

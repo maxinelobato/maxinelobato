@@ -5,6 +5,7 @@ import { Footer } from "../components/Footer";
 import { PageFirst } from "../components/PageFirst";
 import { PagePlane } from "../components/PagePlane";
 import { PageTech } from "../components/PageTech";
+import SocialProve from "../components/SocialProve";
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
         <PageFirst />
         <PageTech />
         <PagePlane />
+        <SocialProve />
         <AccordionItens />
         <AboutMe />
       </BoxGadient>

@@ -38,99 +38,93 @@ export const PageFirst = () => {
         <Flex p={8} flex={1} align={"center"} justify={"center"}>
           <Stack w="full" maxW="4xl">
             <Box maxW="full">
-              <Box
-                borderWidth="2px"
-                borderRadius="lg"
-                overflow="hidden"
-                bgColor="blackAlpha.700"
-              >
-                <Box mt={-3} maxW="full" bgColor="beige">
+              {/* <Box mt={-3} maxW="full" bgColor="beige">
                   <Box ml={3}>
                     <CircleIcon mt={3} />
                     <CircleIcon mt={3} />
                     <CircleIcon mt={3} />
                   </Box>
-                </Box>
-                <Heading
-                  textAlign={"center"}
-                  bgGradient="linear(to-l, orange.300, beige)"
-                  bgClip="text"
-                  mb={4}
-                  p={10}
-                  fontFamily="Krona One"
-                  fontSize="xxx-large"
-                >
-                  <Typed
-                    strings={[
-                      "Sua Landing Page demora mais de 3 segundos para carregar?",
-                    ]}
-                    typeSpeed={40}
-                  />
-                </Heading>
-                <Text
-                  textAlign={"center"}
-                  py={3}
-                  color="beige"
-                  fontFamily="Krona One"
-                  as="h4"
-                  size="md"
+                </Box> */}
+              <Heading
+                textAlign={"center"}
+                bgGradient="linear(to-l, orange.300, beige)"
+                bgClip="text"
+                mb={4}
+                p={10}
+                fontFamily="Krona One"
+                fontSize="xxx-large"
+              >
+                <Typed
+                  strings={[
+                    "Sua Landing Page demora mais de 3 segundos para carregar?",
+                  ]}
+                  typeSpeed={40}
+                />
+              </Heading>
+              <Text
+                textAlign={"center"}
+                py={3}
+                color="beige"
+                fontFamily="Krona One"
+                as="h4"
+                size="md"
+                fontSize="sm"
+              >
+                Você sabia que as pesquisas indicam que um delay de
+                <Tag
+                  size="sm"
                   fontSize="sm"
+                  variant="subtle"
+                  colorScheme="orange"
                 >
-                  Você sabia que as pesquisas indicam que um delay de
-                  <Tag
-                    size="sm"
-                    fontSize="sm"
-                    variant="subtle"
-                    colorScheme="orange"
-                  >
-                    <TagLabel>2 SEGUNDOS</TagLabel>
-                  </Tag>
-                  pode resultar em um abandono de até{" "}
-                  <Tag
-                    size="sm"
-                    fontSize="sm"
-                    variant="subtle"
-                    colorScheme="orange"
-                  >
-                    <TagLabel>87% nas visitas?</TagLabel>
-                  </Tag>
-                </Text>
-                <Stack
-                  py={10}
-                  alignContent="center"
-                  alignItems="center"
-                  justify="center"
-                  direction={{ base: "column", md: "row" }}
+                  <TagLabel>2 SEGUNDOS</TagLabel>
+                </Tag>
+                pode resultar em um abandono de até{" "}
+                <Tag
+                  size="sm"
+                  fontSize="sm"
+                  variant="subtle"
+                  colorScheme="orange"
                 >
-                  <Link
-                    style={{ textDecoration: "none" }}
-                    href="https://wa.me/message/N7ODJHBPZALLJ1"
-                    isExternal
+                  <TagLabel>87% nas visitas?</TagLabel>
+                </Tag>
+              </Text>
+              <Stack
+                py={10}
+                alignContent="center"
+                alignItems="center"
+                justify="center"
+                direction={{ base: "column", md: "row" }}
+              >
+                <Link
+                  style={{ textDecoration: "none" }}
+                  href="https://wa.me/message/N7ODJHBPZALLJ1"
+                  isExternal
+                >
+                  <Button
+                    as={motion.div}
+                    size="lg"
+                    height="60px"
+                    width="300px"
+                    rounded="lg"
+                    bgColor="blackAlpha.900"
+                    boxShadow="dark-lg"
+                    border="1px solid"
+                    _hover={{
+                      bg: "orange.500",
+                      textColor: "beige",
+                    }}
+                    whileHover={{ scale: 1.2 }}
+                    transition="0.1s linear"
                   >
-                    <Button
-                      as={motion.div}
-                      size={"lg"}
-                      height="60px"
-                      width="300px"
-                      rounded={"lg"}
-                      bgColor="beige"
-                      textColor={"blackAlpha.900"}
-                      _hover={{
-                        bg: "orange.500",
-                        textColor: "beige",
-                      }}
-                      whileHover={{ scale: 1.2 }}
-                      transition="0.1s linear"
-                    >
-                      <Center>
-                        <Text textTransform={"uppercase"}>
-                          Saiba como funciona
-                        </Text>
-                      </Center>
-                    </Button>
-                  </Link>
-                </Stack>
-              </Box>
+                    <Center>
+                      <Text textTransform={"uppercase"}>
+                        fale com um especialista
+                      </Text>
+                    </Center>
+                  </Button>
+                </Link>
+              </Stack>
             </Box>
           </Stack>
         </Flex>
