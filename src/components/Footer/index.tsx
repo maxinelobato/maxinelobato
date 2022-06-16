@@ -39,16 +39,22 @@ export function Footer() {
         align={{ base: "center", md: "center" }}
       >
         <Stack direction="row" spacing={6}>
-          <Link href="https://instagram.com/maxinelobato">
+          <Link href="https://instagram.com/maxinelobato" isExternal>
             <Icon as={FaInstagram} w={8} h={8} />
           </Link>
-          <Link href="https://github.com/maxinelobato">
+          <Link href="https://github.com/maxinelobato" isExternal>
             <Icon as={FaGithub} w={8} h={8} />
           </Link>
-          <Link href="https://www.linkedin.com/in/maxine-lobato-a9613189/">
+          <Link
+            href="https://www.linkedin.com/in/maxine-lobato-a9613189/"
+            isExternal
+          >
             <Icon as={FaLinkedin} w={8} h={8} />
           </Link>
-          <Link href="https://open.spotify.com/user/12147654153?si=4f79f1686ffb4cb2&nd=1">
+          <Link
+            href="https://open.spotify.com/user/12147654153?si=4f79f1686ffb4cb2&nd=1"
+            isExternal
+          >
             <Icon as={FaSpotify} w={8} h={8} />
           </Link>
         </Stack>
