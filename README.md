@@ -1,3 +1,3 @@
 # maxinelima
 
-<div class="button-group minor-group">Teste 1</div>
+<a href="#" class="button big icon search blue">Search</a>
