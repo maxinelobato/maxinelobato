@@ -20,8 +20,6 @@
 
 ###
 
-<br clear="both">
-
 <h3 align="left">Technologies I work with 👇</h3>
 
 ###
