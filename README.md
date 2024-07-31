@@ -13,7 +13,7 @@
   <a href="https://www.linkedin.com/in/maxine-lobato-a9613189/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=maxinelibato&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="25" alt="linkedin logo"  />
   </a>
-  <a href="limabarreto.org@gmail.com" target="_blank">
+  <a href="mailto:limabarreto.org@gmail.com" target="_blank">
     <img src="https://img.shields.io/static/v1?message=lb.org&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="25" alt="gmail logo"  />
   </a>
 </div>
