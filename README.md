@@ -42,7 +42,7 @@
 
 <br clear="both">
 
-<img align="left" height="50" src="https://i.ibb.co/s1y8d3b/lb-org.png" alt="lb-org" border="0"/>
+<img align="left" height="50" src="https://i.ibb.co/3CZYPGW/lb-org-branca.png" alt="lb-org-branca" border="0"/>
 
 ###
 
