@@ -42,7 +42,7 @@
 
 <br clear="both">
 
-<img align="left" height="50" src="https://imgtr.ee/images/2024/07/17/92e7860ff90ddf5660bca4bc8a81d63e.png"  />
+<img align="left" height="50" src="https://ibb.co/R6zRkHY"  />
 
 ###
 
